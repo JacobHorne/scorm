@@ -1,11 +1,12 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-$darkerblue:#255c8e;
-$darkblue:#3885cb;
-$skyblue:#75aadb;
-$lightblue:#b2cfeb;
-$midblue:#619ed6;
-$grey:#96a9ba;
+	$darkerblue:#255c8e;
+	$darkblue:#3885cb;
+	$skyblue:#75aadb;
+	$lightblue:#b2cfeb;
+	$midblue:#619ed6;
+	$grey:#96a9ba;
+	$border:0.5px solid $grey;
 
 
 
@@ -30,7 +31,9 @@ h1{
 	color:$darkerblue;
 	text-align: center;
 }
-
+h2{
+	text-align:center;
+}
 p{
 	color:$darkerblue;
 }
@@ -38,8 +41,7 @@ p{
 .wrapper{
 	width:90%;
 	margin:0 auto;
-	margin-top:2em;
-	margin-bottom:2em;
+	padding:2em 0px;
 }
 
 /***** SITE STYLES *************/
@@ -49,7 +51,6 @@ p{
 .navigation{
 	padding:1.2em 0px;
 	background-color:$darkblue;
-	border-bottom:0.5px solid $grey;
 	
 	img{
 		display:inline-block;
@@ -73,8 +74,6 @@ p{
 
 .header{	
 	background-color:$skyblue;
-	border-bottom:0.5px solid $grey;
-	
 	img{
 		width:40%;
 		margin:0 auto;
@@ -92,21 +91,11 @@ p{
 	}
 }
 
-.content{
-	iframe{
-		position: absolute;
-		top:100%;
-		bottom:100%;
-	}
-}
+
 .secondary-content{
-	background-color:blue;
-	color:red;
-	width:10%;
+	background-color:$midblue;
 }
-footer{
-	background-color:black;
-}
+
 
 @media screen and (min-width: 625px) {
 	.header{
