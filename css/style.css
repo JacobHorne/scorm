@@ -1,0 +1,49 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 10, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 12, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 16, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 21, ../scss/style.scss */
+p {
+  margin: 0px;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 28, ../scss/style.scss */
+.navigation {
+  padding: 2em;
+  background-color: #3885cb;
+}
+/* line 32, ../scss/style.scss */
+.navigation img {
+  display: inline-block;
+}
+/* line 35, ../scss/style.scss */
+.navigation ul {
+  float: right;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 41, ../scss/style.scss */
+.navigation li {
+  color: white;
+  display: inline-block;
+}
+
+/* line 47, ../scss/style.scss */
+.header {
+  background-color: #75aadb;
+}

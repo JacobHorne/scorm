@@ -1,0 +1,60 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+$darkblue:#3885cb;
+$skyblue:#75aadb;
+$lightblue:#b2cfeb;
+$midblue:#619ed6;
+
+
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+p{
+	margin:0px;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+
+.navigation{
+	padding:2em;
+	background-color:$darkblue;
+	
+	img{
+		display:inline-block;
+	}
+	ul{
+		float:right;
+		display:inline-block;
+		padding:0px;
+		margin:0px;
+	}
+	li{
+		color:white;
+		display: inline-block;
+	}
+}
+
+.header{
+	background-color:$skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
