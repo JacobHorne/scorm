@@ -1,49 +1,132 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-/* line 10, ../scss/style.scss */
+/* line 12, ../scss/style.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 12, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 16, ../scss/style.scss */
+/* line 18, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 25, ../scss/style.scss */
+img {
+  display: block;
+}
+
+/* line 28, ../scss/style.scss */
+h1 {
+  font-size: 2em;
+  color: #255c8e;
+  text-align: center;
+}
+
+/* line 34, ../scss/style.scss */
 p {
-  margin: 0px;
+  color: #255c8e;
+}
+
+/* line 38, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /***** SITE STYLES *************/
 /**********************************/
-/* line 28, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 .navigation {
-  padding: 2em;
+  padding: 1.2em 0px;
   background-color: #3885cb;
+  border-bottom: 0.5px solid #96a9ba;
 }
-/* line 32, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .navigation img {
   display: inline-block;
+  max-width: 30px;
 }
-/* line 35, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .navigation ul {
   float: right;
   display: inline-block;
   padding: 0px;
   margin: 0px;
 }
-/* line 41, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .navigation li {
   color: white;
   display: inline-block;
 }
+/* line 68, ../scss/style.scss */
+.navigation a {
+  text-decoration: none;
+  color: #b2cfeb;
+}
 
-/* line 47, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .header {
   background-color: #75aadb;
+  border-bottom: 0.5px solid #96a9ba;
+}
+/* line 78, ../scss/style.scss */
+.header img {
+  width: 40%;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 1.5em;
+}
+/* line 85, ../scss/style.scss */
+.header .col3 img {
+  display: block;
+  max-width: 200px;
+}
+/* line 90, ../scss/style.scss */
+.header h2 {
+  color: #255c8e;
+}
+
+/* line 96, ../scss/style.scss */
+.content iframe {
+  position: absolute;
+  top: 100%;
+  bottom: 100%;
+}
+
+/* line 102, ../scss/style.scss */
+.secondary-content {
+  background-color: blue;
+  color: red;
+  width: 10%;
+}
+
+/* line 107, ../scss/style.scss */
+footer {
+  background-color: black;
+}
+
+@media screen and (min-width: 625px) {
+  /* line 113, ../scss/style.scss */
+  .header .wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  /* line 117, ../scss/style.scss */
+  .header .col3 {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+  }
 }

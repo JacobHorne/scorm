@@ -1,9 +1,11 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
+$darkerblue:#255c8e;
 $darkblue:#3885cb;
 $skyblue:#75aadb;
 $lightblue:#b2cfeb;
 $midblue:#619ed6;
+$grey:#96a9ba;
 
 
 
@@ -17,20 +19,41 @@ $midblue:#619ed6;
         clear: both;
     }
 }
+body{
+	font-family: "Lato", sans-serif;
+}
+img{
+	display:block;
+}
+h1{
+	font-size:2em;
+	color:$darkerblue;
+	text-align: center;
+}
 
 p{
-	margin:0px;
+	color:$darkerblue;
+}
+
+.wrapper{
+	width:90%;
+	margin:0 auto;
+	margin-top:2em;
+	margin-bottom:2em;
 }
 
 /***** SITE STYLES *************/
 /**********************************/
 
+
 .navigation{
-	padding:2em;
+	padding:1.2em 0px;
 	background-color:$darkblue;
+	border-bottom:0.5px solid $grey;
 	
 	img{
 		display:inline-block;
+		max-width: 30px;
 	}
 	ul{
 		float:right;
@@ -42,13 +65,63 @@ p{
 		color:white;
 		display: inline-block;
 	}
+	a{
+		text-decoration: none;
+		color:$lightblue;
+	}
 }
 
-.header{
+.header{	
 	background-color:$skyblue;
+	border-bottom:0.5px solid $grey;
+	
+	img{
+		width:40%;
+		margin:0 auto;
+		max-width: 300px;
+		padding:1.5em;
+	}
+	.col3{
+		img{
+			display:block;
+			max-width: 200px;
+		}
+	}
+	h2{
+		color:$darkerblue;
+	}
 }
 
+.content{
+	iframe{
+		position: absolute;
+		top:100%;
+		bottom:100%;
+	}
+}
+.secondary-content{
+	background-color:blue;
+	color:red;
+	width:10%;
+}
+footer{
+	background-color:black;
+}
 
+@media screen and (min-width: 625px) {
+	.header{
+		.wrapper{
+			width: 85%;
+			margin: 0 auto;
+		}
+		.col3{
+			display:inline-block;
+			width:30%;
+			margin-right: 3%;
+			text-align: center;
+		}
+	}
+}
 
 
 
