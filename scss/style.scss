@@ -27,14 +27,16 @@ img{
 	display:block;
 }
 h1{
-	font-size:2em;
-	color:$darkerblue;
+	font-size:4em;
+	color:white;
 	text-align: center;
+	text-shadow:1px 1px #f2f2f2;
 }
 h2{
 	text-align:center;
 }
 p{
+	font-size:2em;
 	color:$darkerblue;
 }
 
@@ -49,7 +51,7 @@ p{
 
 
 .navigation{
-	padding:1.2em 0px;
+	padding:1.2em;
 	background-color:$darkblue;
 	
 	img{
@@ -73,7 +75,13 @@ p{
 }
 
 .header{	
-	background-color:$skyblue;
+	background: #a7eef9; /* Old browsers */
+background: -moz-linear-gradient(left, #a7eef9 1%, #a7eef9 41%, #bcfff7 101%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #a7eef9 1%,#a7eef9 41%,#bcfff7 101%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #a7eef9 1%,#a7eef9 41%,#bcfff7 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7eef9', endColorstr='#bcfff7',GradientType=1 ); /* IE6-9 */
+copy
+
 	img{
 		width:40%;
 		margin:0 auto;
@@ -106,8 +114,14 @@ p{
 		.col3{
 			display:inline-block;
 			width:30%;
-			margin-right: 3%;
+			margin-left: 3%;
 			text-align: center;
+			h2{
+				text-align: center;
+			}
+			img{
+				margin:0 auto;
+			}
 		}
 	}
 }
