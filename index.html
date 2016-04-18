@@ -11,79 +11,85 @@
 
         <!-- Place favicon.ico in the root directory -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
         <section class="header">
-            <div class="wrapper">
+
+            <div class="navigation">
+                <img src="img/scorm-alt.png" class="logo">
                 <nav class="navigation">
                     <ul>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#purchase">PURCHASE</a></li>
+                        <li><a href="#pricing">FEATURES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul> 
-                </nav>    
-                <img src="img/logo.png">
-                <h1>100% JAVASCRIPT DEBUGGER </h1>
+                </nav>
+            </div> 
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatibus</p>
-                
-                <div class="col3">
-                    <h2>Grandular Registration</h2>
-                    <img src="img/database.svg">
-                </div>
 
-                <div class="col3">
-                    <h2>Realtime data access</h2>
-                    <img src="img/ember.svg">
-                </div>
+                <div class="content" id="content">
+                    <h1>Scorm Toolkit</h1>
+                    <h3>The #1 tool used by professionals to cultivate curriculum</h3>
+                    <div class="button-container">
+                        <a href="#"><button>Demo</button></a>
+                        <a href="#"><button>Purchase</button></a>
+                    </div>
 
-                <div class="col3">
-                    <h2>Reporting and data exports</h2>
-                    <img src="img/netbeans.svg">
-                </div>
-            </div>
-
-            <div class="user-input clearfix">
-                <input type="text" name="email_address" placeholder="Enter your email address">
-                <button>Sign Up</button>
-            </div>
-        </section>  
-
-        <section class="content">
-            <h1>HOW IT WORKS</h1>
-            <p>Attach File Here</p>
-            <div class="wrapper">
-                <video class="responsive-video" controls>
-                    <source src="img/untitled.mov" type="video/mp4">
-                </video>
+                    <div class="laptop-container">
+                        <a href="youtube.com" data-featherlight="iframe"><img src="img/laptop.png" class="laptop"></a>
+                    </div>
+                </div>    
             </div>
         </section>
+
+        
+
+            <!-- <div class="user-input clearfix">
+                <button>Purchase</button>
+            </div> -->
+
+
 
         <section class="secondary-content">
-            <div class="wrapper">
-                <h1>Support</h1>
-            </div>
+                <h2>FEATURES</h2>
+                <p>At the lowest level, executable code consists of machine language instructions specific to an individual processor—typically a central processing unit (CPU). A machine language consists of groups of binary values signifying processor instructions that change the state of the computer from its preceding state. For example, an instruction may change the value stored in a parti</p>
+                <div class="icon-container">
+                    <div class="icons">
+                        <i class="fa fa-bar-chart-o" aria-hidden="true"></i>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </div>
+                </div>
         </section>
 
-        <footer class="navigation clearfix">
+        <section class="form" id="contact">
+            <h2>CONTACT </h2>
+            <form>
+                <input type="text" label="name" name="Name" placeholder="Name" />
+                <input type="text" name="Email" placeholder="Email" />
+                <textarea rows="5" columns="50" type="text" name="Message" placeholder="Enter Your Message"></textarea>
+            </form>
+            <button>Submit</button>
+        </section>
+
+        <footer>
             <div class="wrapper">
+                <img src="img/scorm-white.svg">
                   <ul>
-                     <li><a href="">Product</a></li>
-                     <li><a href="">Pricing</a></li>
-                     <li><a href="">Support</a></li>
+                     <li><a href="">PRODUCT</a></li>
+                     <li><a href="">FEATURES</a></li>
+                     <li><a href="">CONTACT</a></li>
                  </ul>
-                 <div>
-                    <a href=""><img src="img/github.svg"></a>
-                    <a href=""><img src="img/meteor.svg"></a>
-                    <a href=""><img src="img/ubuntu.svg"></a>
-                 </div>
-            </div>   
+            </div>
+            <p>Created by Hacker Ferret &copy; 2016</p>   
         </footer>
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/featherlight.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
